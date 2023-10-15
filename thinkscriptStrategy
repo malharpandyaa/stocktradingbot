@@ -1,0 +1,4 @@
+# Simple Moving Average Crossover Strategy input fastLength = 10;
+input slowLength = 50;
+def fastMA = Average(close, fastLength); def slowMA = Average(close, slowLength);
+plot bullish = fastMA > slowMA; plot bearish = fastMA < slowMA;
